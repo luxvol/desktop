@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|c:\\users\\btkul\\desktop\\kantor\\version1.0\\lifeplanner\\windows\\addtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|solutionrelative:windows\\addtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|c:\\users\\btkul\\desktop\\kantor\\version1.0\\lifeplanner\\windows\\weekplanner.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|solutionrelative:windows\\weekplanner.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|c:\\users\\btkul\\desktop\\kantor\\version1.0\\lifeplanner\\windows\\edittask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|solutionrelative:windows\\edittask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|c:\\users\\btkul\\desktop\\kantor\\version1.0\\lifeplanner\\windows\\edittask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|solutionrelative:windows\\edittask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|c:\\users\\btkul\\desktop\\kantor\\version1.0\\lifeplanner\\windows\\addtask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|solutionrelative:windows\\addtask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|c:\\users\\btkul\\desktop\\kantor\\version1.0\\lifeplanner\\windows\\weekplanner.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|solutionrelative:windows\\weekplanner.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|c:\\users\\btkul\\desktop\\kantor\\version1.0\\lifeplanner\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|c:\\users\\btkul\\desktop\\kantor\\version1.0\\lifeplanner\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ED9352D4-6962-4E4B-B72F-10956D0F4344}|LifePlanner.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditTask.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\EditTask.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\EditTask.xaml.cs",
+              "ToolTip": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\EditTask.xaml.cs",
+              "RelativeToolTip": "Windows\\EditTask.xaml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAA0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T14:08:02.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditTask.xaml",
+              "DocumentMoniker": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\EditTask.xaml",
+              "RelativeDocumentMoniker": "Windows\\EditTask.xaml",
+              "ToolTip": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\EditTask.xaml",
+              "RelativeToolTip": "Windows\\EditTask.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T13:54:11.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddTask.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\AddTask.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\AddTask.xaml.cs",
+              "ToolTip": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\AddTask.xaml.cs",
+              "RelativeToolTip": "Windows\\AddTask.xaml.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAowEQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T15:40:27.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddTask.xaml",
+              "DocumentMoniker": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\AddTask.xaml",
+              "RelativeDocumentMoniker": "Windows\\AddTask.xaml",
+              "ToolTip": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\AddTask.xaml",
+              "RelativeToolTip": "Windows\\AddTask.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-31T15:39:35.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeekPlanner.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\WeekPlanner.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\WeekPlanner.xaml.cs",
+              "ToolTip": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\WeekPlanner.xaml.cs",
+              "RelativeToolTip": "Windows\\WeekPlanner.xaml.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAD4v5QAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T15:36:07.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAQwHUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T15:35:55.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-31T15:35:53.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeekPlanner.xaml",
+              "DocumentMoniker": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\WeekPlanner.xaml",
+              "RelativeDocumentMoniker": "Windows\\WeekPlanner.xaml",
+              "ToolTip": "C:\\Users\\btkul\\Desktop\\kantor\\Version1.0\\LifePlanner\\Windows\\WeekPlanner.xaml",
+              "RelativeToolTip": "Windows\\WeekPlanner.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-31T09:49:08.671Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

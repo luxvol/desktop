@@ -1,0 +1,164 @@
+﻿<Window x:Class="LifePlanner.Windows.WeekPlanner"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LifePlanner.Windows"
+        mc:Ignorable="d"
+        Title="WeekPlanner" Height="900" Width="1600">
+    <Window.Resources>
+        <Style TargetType="GridViewColumnHeader">
+            <Setter Property="Width" Value="220"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="220"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF64B5F6" Offset="0.0"/>
+                        <GradientStop Color="#FF1976D2" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="BorderBrush" Value="#FF0D47A1"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border 
+                            x:Name="border"
+                            Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            CornerRadius="10">
+                                <ContentPresenter 
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center"/>
+                            </Border>
+                            <Border x:Name="hoverBorder"
+                                Background="Transparent"
+                                BorderBrush="Transparent"
+                                BorderThickness="2"
+                                CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <Border x:Name="focusBorder"
+                                BorderBrush="White"
+                                BorderThickness="2"
+                                CornerRadius="10"
+                                Opacity="0">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="#FF1976D2" Offset="0.0"/>
+                                            <GradientStop Color="#FF64B5F6" Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter TargetName="hoverBorder" Property="Background" Value="#661D8BE0"/>
+                                <Setter TargetName="hoverBorder" Property="BorderBrush" Value="#FF1976D2"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="#FF0D47A1" Offset="0.0"/>
+                                            <GradientStop Color="#FF1976D2" Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="focusBorder" Property="Opacity" Value="1"/>
+                                <Setter TargetName="focusBorder" Property="BorderBrush" Value="White"/>
+                            </Trigger>
+                            <EventTrigger RoutedEvent="Button.Click">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation 
+                                        Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)" 
+                                        To="1.1" Duration="0:0:0.1" AutoReverse="True"/>
+                                        <DoubleAnimation 
+                                        Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)" 
+                                        To="1.1" Duration="0:0:0.1" AutoReverse="True"/>
+                                        <ColorAnimation 
+                                        Storyboard.TargetName="border" 
+                                        Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)" 
+                                        To="Red" Duration="0:0:0.1" AutoReverse="True"/>
+                                        <ColorAnimation 
+                                        Storyboard.TargetName="border" 
+                                        Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)" 
+                                        To="Orange" Duration="0:0:0.1" AutoReverse="True"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </ControlTemplate.Triggers>
+                        <ControlTemplate.Resources>
+                            <ScaleTransform x:Key="scaleTransform" ScaleX="1" ScaleY="1"/>
+                        </ControlTemplate.Resources>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
+            <ListView Name="WeekListView" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Monday" DisplayMemberBinding="{Binding Monday}"/>
+                        <GridViewColumn Header="Tuesday" DisplayMemberBinding="{Binding Tuesday}"/>
+                        <GridViewColumn Header="Wednesday" DisplayMemberBinding="{Binding Wednesday}"/>
+                        <GridViewColumn Header="Thursday" DisplayMemberBinding="{Binding Thursday}"/>
+                        <GridViewColumn Header="Friday" DisplayMemberBinding="{Binding Friday}"/>
+                        <GridViewColumn Header="Saturday" DisplayMemberBinding="{Binding Saturday}"/>
+                        <GridViewColumn Header="Sunday" DisplayMemberBinding="{Binding Sunday}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ScrollViewer>
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible">
+            <ListView Name="WeeklyTasks" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MouseDoubleClick="WeeklyTasks_MouseDoubleClick">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding Task1}"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Task2}"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Task3}"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Task4}"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Task5}"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Task6}"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Task7}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ScrollViewer>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Button Name="Task1AddBtn" Content="+" Click="TaskButton_Click"/>
+            <Button Name="Task2AddBtn" Content="+" Click="TaskButton_Click"/>
+            <Button Name="Task3AddBtn" Content="+" Click="TaskButton_Click"/>
+            <Button Name="Task4AddBtn" Content="+" Click="TaskButton_Click"/>
+            <Button Name="Task5AddBtn" Content="+" Click="TaskButton_Click"/>
+            <Button Name="Task6AddBtn" Content="+" Click="TaskButton_Click"/>
+            <Button Name="Task7AddBtn" Content="+" Click="TaskButton_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
